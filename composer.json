@@ -1,0 +1,44 @@
+{
+    "name": "dazzlesoftware/crypt",
+    "type": "library",
+    "description": "Dazzle Crypt Package",
+    "keywords": ["dazzle", "framework", "crypt"],
+    "homepage": "https://github.com/dazzle-framework/crypt",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": "^7.3.0"
+    },
+    "require-dev": {
+        "defuse/php-encryption": "^2.0",
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "paragonie/sodium_compat": "^1.0",
+        "phpunit/phpunit": "^9.0",
+        "symfony/polyfill-util": "^1.0",
+        "symfony/phpunit-bridge": "^4.4|^5.0"
+    },
+    "conflict": {
+        "defuse/php-encryption": "<2.0"
+    },
+    "suggest": {
+        "ext-openssl": "To use the OpenSSL cipher",
+        "ext-sodium": "To use the Sodium cipher",
+        "defuse/php-encryption": "To use Crypto cipher",
+        "paragonie/sodium_compat": "To use Sodium cipher if neither ext/sodium or ext/libsodium are available"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Crypt\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Crypt\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
