@@ -10,7 +10,7 @@
     },
     "require-dev": {
         "defuse/php-encryption": "^2.0",
-        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/dazzle-coding-standard": "^1.0|^2.0",
         "paragonie/sodium_compat": "^1.0",
         "phpunit/phpunit": "^9.0",
         "symfony/polyfill-util": "^1.0",
@@ -38,7 +38,8 @@
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0-dev"
+            "dev-master": "1.x-dev",
+            "dev-develop": "2.x-dev"
         }
     }
 }
